@@ -5,102 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel="stylesheet" href="./css/reponsive.css">
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.theme.default.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <!-- Thanh nav của Header-->
-            <nav>
-                <div class="context-h1">
-                    <img src="./image/Group.png" alt="">
-                    
+            <!-- Thanh nav của Header--> 
+            <div class="container_big">
+                   <div class="context-h1">
+                    <img src="./image/Group.png" alt="">        
                 </div>
-                <ul>
-                    <li id="list"><a href="#">Về chúng tôi</a><i><ion-icon name="caret-down-outline"></ion-icon></i></li>
-                    <li id="list"><a href="#">Sản phẩm</a><i><ion-icon name="caret-down-outline"></ion-icon></i></li>
+                <div class="content_right">
+                    <div class="menu">
+                <nav>  
+                
+                    <ul>
+                    <li id="list">
+                        <a href="#">Về chúng tôi</a><i><ion-icon name="caret-down-outline"></ion-icon></i>
+                        <ul class="list_menu">
+                            <li><a href="#">Giới thiệu chung</a></li>
+                            <li><a href="#">Hoạt động sản xuất</a></li>
+                            <li><a href="#">Chiến lược - Triết lý kinh doanh</a></li>
+                            <li><a href="#">Kiểm soát chất lượng</a></li>
+                        </ul>
+                    </li>
+                    <li id="list">
+                        <a href="#">Sản phẩm</a><i><ion-icon name="caret-down-outline"></ion-icon></i>
+                        <ul class="list_menu">
+                            <li><a href="#">Nguyên liệu giấy bìa carton</a></li>
+                            <li><a href="#">Hộp in Offset</a></li>
+                            <li><a href="#">Hộp quà tặng cao cấp</a></li>
+                            <li><a href="#">Giấy in dùng trong hộp Offset</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Tin Tức</a></li>
                     <li><a href="#">Tuyển dụng</a></li>
                     <li><a href="#">Liên hệ</a></li>
-                    <li><a href="#"><img src="./image/search.png" alt=""></a></li>
-                    <li id="list">
-                        <label class="langues" for="lang"><img src="./image/Ellipse 2.png" alt=""></label>
-                        <select name="lang" id="lag" class="select-box">
-                            <option label="VN" value="VN">VN</option>
-                            <option label="EN" value="EN">EN</option>
-                        </select>
-                    </li>
-                    <li><button id="but_one"><a href="#">Catalogue </a><i><img src="./image/colour 1.png" alt=""></i></button>
-                    </li>
-                    <li><button id="but_two"><a href="#">Hồ sơ năng lực </a><i><img src="./image/description.png"
-                                    alt=""></i></button></li>
-                </ul>
-            </nav>
+                    </ul> 
+              </nav>
+                    </div>
+                  
+                <div class="top_head">
+                    <a href="#"><img src="./image/search.png" alt="" onclick="Search()" class="search"></a>
+                    <form action="">
+                         <div id="drop_down" class="dropdow_content">
+                        <div class="center_flex">
+                            <input type="text" placeholder="Nhập tìm kiếm" >
+                            <i id="close"style="cursor: pointer;"><ion-icon name="close-outline"  onclick="Close()" ></ion-icon></i>
+                        </div>
+                    </div>
+                    </form>
+                   
+                            <label class="langues" for="lang"><img src="./image/Ellipse 2.png" alt=""></label>
+                            <select name="lang" id="lag" class="select-box">
+                                <option label="VN" value="VN">VN</option>
+                                <option label="EN" value="EN">EN</option>
+                            </select>
+                        
+                       <button id="but_one"><a href="#">Catalogue </a><i><img src="./image/colour 1.png" alt=""></i></button>
+                        
+                       <button id="but_two"><a href="#">Hồ sơ năng lực </a><i><img src="./image/description.png" alt=""></i></button>
+                </div>
+                </div>     
+            </div>
+         </header>       
             <!--Text của Header left-->
-            <div class="content-header">
+                <div class="content-header">
                     <div class="content-header-text">
                         <h2>VỚI BỀ DÀY KINH NGHIỆM TRÊN 20 NĂM</h2>
                         <p>Mang đến những giải pháp bao bì tốt nhất để đóng gói,
-                        bảo vệ sản phẩm của quý khách</p>
+                            bảo vệ sản phẩm của quý khách</p>
                         <button><a href="#">Liên hệ với chúng tôi </a><i><img src="./image/arrow_right_alt.png" alt=""></i></button>
-                        <div class="carousel">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
+                
                     </div>
-                <!--Img của Header Right-->
+                    <!--Img của Header Right-->
                     <div class="content-header-img">
-
+                        <img src="../image/slider-home-0.png" alt="">
                     </div>
-            </div>
+                </div>
             <div class="content-user">
-                    <div class="content-user-list">
-                        <div class="image-user">
-                            <img src="./image/relationship-box-head-page.png" alt="">
-                        </div>
-                        <div class="user-text">
-                            <div class="text-h3">
-                                <h3>150.000 <i><img src="./image/add.png" alt=""></i></h3>
+                <div class="main">
+                    <div class="content_flex">
+                            <div class="content-user-list">   
+                                <div class="image-user">
+                                    <img src="./image/relationship-box-head-page.png" alt="">
+                                </div>
+                                <div class="user-text">
+                                    <div class="text-h3">
+                                        <h3>150.000 <i><img src="./image/add.png" alt=""></i></h3>
+                                    </div>
+                                    <div class="text-p">
+                                        <p>Khách Hàng</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text-p">
-                                <p>Khách Hàng</p>
+                            <div class="content-user-list">
+                                <div class="image-user">
+                                    <img src="./image/product-box-head-page.png" alt="">
+                                </div>
+                                <div class="user-text">
+                                    <div class="text-h3">
+                                        <h3>350.000 <i><img src="./image/add.png" alt=""></i></h3>
+                                    </div>
+                                    <div class="text-p">
+                                        <p>sản phẩm được sản xuất</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="content-user-list">
+                                <div class="image-user">
+                                    <img src="./image/team-management-box-head-page.png" alt="">
+                                </div>
+                                <div class="user-text">
+                                    <div class="text-h3">
+                                        <h3>2.000 <i><img src="./image/add.png" alt=""></i></h3>
+                                    </div>
+                                    <div class="text-p">
+                                        <p>nhân viên chuyên nghiệp</p>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-                    <div class="content-user-list">
-                        <div class="image-user">
-                            <img src="./image/product-box-head-page.png" alt="">
-                        </div>
-                        <div class="user-text">
-                            <div class="text-h3">
-                                <h3>350.000 <i><img src="./image/add.png" alt=""></i></h3>
-                            </div>
-                            <div class="text-p">
-                                <p>sản phẩm được sản xuất</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-user-list">
-                        <div class="image-user">
-                                <img src="./image/team-management-box-head-page.png" alt="">
-                        </div>
-                        <div class="user-text">
-                            <div class="text-h3">
-                                <h3>2.000 <i><img src="./image/add.png" alt=""></i></h3>
-                            </div>
-                            <div class="text-p">
-                                <p>nhân viên chuyên nghiệp</p>
-                            </div>
-                        </div>
-                    </div>
+                       
+                </div>
+                   
             </div>
-        </header>
+        
             <!--Sản phẩm-->
             <section class="product">
-                <div class="main">
+                <div class="center_flex">
                         <div class="test_collter center bot">
                             <h2>Danh mục sản phẩm</h2>
                         </div>
@@ -125,22 +163,20 @@
                             </div>
                         </div>
                     </div>
-
             </section>
             <!--Cơ sở vật chất-->
             <section class="infrastructure">
                 <div class="test_collter center bot">
                     <h2>Cơ sở vật chất</h2>
                 </div>
-                <div class="main">
-                        <div class="img_big">
-                            <div class="img_big-tive">
+                <div class="center_flex">
+                        <div class="img_biger">
+                            <div class="img_big">
                             <img src="./image/infrastructure/csvc1.png" alt="">
-                            <img src="./image/infrastructure/Rectangle 29802.png" alt="" id="rectangle">
                             </div>
                             <div class="img_big1">
                                 <img src="./image/infrastructure/csvc2.png" alt="">
-                                <img src="./image/infrastructure/Group 1000006818.png" alt="" id="rectangle1">
+                            
                             </div>
                             <div class="img_big2">
                                 <div class="img_one">
@@ -153,13 +189,14 @@
                             </div>
                         </div>
                         <div class="btn_center">
-                            <button class="btn" ><a href="#">Xem thêm</a></button>
+                            <button class="btn" ><a href="#">Xem thêm</a><span><i><img src="./image/arrow_right_alt (1).png" alt=""></i></span></button>
                         </div>
                         
                 </div>
             </section>
+            <!--Tại sao lại chọn chúng tôi-->
             <section class="why">
-                <div class="main">
+                <div class="center_flex">
                     <div class="test_collter center bot">
                         <h2>Vì sao chọn Shun Fa ? </h2>
                     </div>
@@ -232,27 +269,27 @@
             </section>
             <!--Khách hàng-->
             <section class="user">
-                    <div class="main"> 
+                    <div class="center_flex"> 
                     <div class="user-list">
                         <div class="test_collter center bot">
                                 <h2 >Khách Hàng</h2>
                         </div>
                     
-                    <div class="img-cty">
-                        <img src="./image/partners01.png" alt="">
-                        <img src="./image/partners03.png" alt="">
-                        <img src="./image/partners05.png" alt="">
-                        <img src="./image/partners06.png" alt="">
-                        <img src="./image/partners07.png" alt="">
-                        <img src="./image//Group (1).png" alt="">
-                        <img src="./image/Group.png" alt="">
+                    <div class="owl-carousel">
+                        <div class="item"><img src="./image/partners01.png" alt="" class="slide"></div>
+                        <div class="item"><img src="./image/partners03.png" alt="" class="slide"> </div>
+                        <div class="item"><img src="./image/partners05.png" alt="" class="slide"></div>
+                        <div class="item"><img src="./image/partners06.png" alt="" class="slide"></div>
+                        <div class="item"><img src="./image/partners07.png" alt="" class="slide"></div>
+                        <div class="item"><img src="./image//Group (1).png" alt="" class="slide"></div>
+                        <div class="item"><img src="./image/Group.png" alt="" class="slide"></div>
                       </div>
                      </div>
                 </div>
             </section>
             <!--Chứng nhận tiêu chuẩn công ty-->
             <section class="rules">
-                <div class="main">
+                <div class="center_flex">
                     <div class="user-list1">
                         <div class="test_collter center bot">
                             <h2 id="test">Chứng nhận tiêu chuẩn</h2>
@@ -271,16 +308,16 @@
                             <img src="./image/listCty/Group 1000006765.png" alt="">
                         </div>
                         <div class="button_user">
-                            <button><a href="#">Xem tất cả</a></button>
+                            <button><a href="#">Xem tất cả</a> </button>
                         </div>
                     </div> 
                 </div>
             </section>
             <!--Blog tin tức-->
             <section class="blog">
-                <div class="main"> 
+                <div class="center_flex"> 
                     <div class="test_collter center ">
-                        <h2 id="test1">Tin Tức nổi bật</h2>
+                        <h2 >Tin Tức nổi bật</h2>
                     </div>
                     
                     <div class="user-blog">
@@ -296,7 +333,7 @@
                                 <a href="#" class="a_button">Chia sẻ</a>
                                 <a href="#" class="a_button">Thiết kế bao bì</a>
                             </div>
-                            <button class="btn"><a href="#">Xem tất cả</a></button>
+                            <button class="btn"><a href="#">Xem tất cả</a> <span><i><img src="./image/arrow_right_alt (1).png" alt=""></i></span></button>
                         </div>
                         <div class="img_title">
                                 <div class="img_title1">
@@ -332,8 +369,9 @@
                     </div>   
                 </div>
             </section>
+            <!--Shunfa-->
             <section class="shunfa">
-                <div class="main">
+                <div class="center_flex">
                     <div class="test_couter center ">
                         <h2>SHUN FA</h2>           
                             <p>
@@ -341,10 +379,8 @@
                                 sản phẩm của quý khách trong suốt quá trình vận chuyển và lưu trữ.
                             </p>
                         <div class="btn_center">
-                             <div class="btn">
-                            <a class="" href="https://shunfa.vn/#data-target=">Liên hệ với chúng tôi</a>
-                            <span><i class="fa-solid fa-arrow-right"></i>
-                            </span>
+                             <div class="btn_btn">
+                            <a class="" href="https://shunfa.vn/#data-target=">Liên hệ với chúng tôi <i><img src="./image/arrow_right_alt.png" alt=""></i></a>
                         </div>
                         </div>
                        
@@ -354,6 +390,27 @@
                    
                 </div>
             </section>
+            <!--Liên hệ tư vấn-->
+            <div class="action_btn">
+                <div class="wrapper-one">
+                    <div class="ring img_phone">
+                        <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+                            <div class="coccoc-alo-ph-circle"></div>
+                            <div class="coccoc-alo-ph-circle-fill"></div>
+                            <div class="coccoc-alo-ph-img-circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="ring img_mess">
+                        <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+                            <div class="coccoc-alo-ph-circle"></div>
+                            <div class="coccoc-alo-ph-circle-fill"></div>
+                            <div class="coccoc-alo-ph-img-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     <footer>
         <div class="container">
             <div class="item__left">
@@ -440,3 +497,4 @@
 </body>
 </html>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="./js/Carousel.js"></script>

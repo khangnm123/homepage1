@@ -1,0 +1,15 @@
+@media only screen and (max-width: 1000px) {
+  header nav ul {
+    display: none;
+  }
+  .content-header {
+    display: block;
+  }
+}
+@media only screen and (max-width: 996px) {
+  header nav ul {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=reponsive.css.map */
